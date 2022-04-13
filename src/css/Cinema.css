@@ -1,0 +1,32 @@
+.cinema{
+  margin: 10px;
+}
+.searchInput{
+  width: 70%;
+  margin: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.searchBtn{
+  height: 30px;
+  width: 50px;
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: grey;
+}
+.cinema-card{
+  margin: 10px;
+  border-bottom: 0.5px solid rgb(172, 172, 172);
+}
+.cinema-name{
+  font-size: large;
+  margin-bottom: 10px;
+}
+.cinema-address{
+  font-size: small;
+  color: gray;
+  margin-bottom: 5px;
+}
