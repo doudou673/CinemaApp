@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.film {
+  padding-top: 50px;
+}
+
+.tab {
+  list-style: none;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 44px;
+  background-color: #fff;
+  margin: 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.tab li {
+  width: 50%;
+  text-align: center;
+  color: #191a1b;
+  font-size: 14px;
+  line-height: 49px;
+}
+
+.tab .active {
+  color: #ff5f16;
+  height: 49px;
+  border-bottom: 1px solid #ff5f16;
+}
+
+.film-list {
+  list-style: none;
+}
+
+.no-more {
+  height: 59px;
+  background-color: #ededed;
+  font-size: 13px;
+  color: #bdc0c5;
+  text-align: center;
+  line-height: 59px;
+}

@@ -1,6 +1,14 @@
 .cinema{
   margin: 10px;
 }
+.search{
+  width: 90%;
+  margin: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 0 5px;
+}
 .searchInput{
   width: 70%;
   margin: 0 10px;

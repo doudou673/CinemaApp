@@ -17,15 +17,18 @@ class Cinema extends Component {
         'X-Host': 'mall.film-ticket.cinema.list'
       }
     }).then(res => {
-      // console.log(res.data)
+      console.log(res.data)
       this.setState({
         cinemaList: res.data.data.cinemas
       })
     })
     this.handleInput = event => {
-      const text = event.target.value
+      const text = event.target.value.toUpperCase()
       // console.log(text);
-      let results = this.state.cinemaList.filter(item => item.name.indexOf(text) > -1 || item.address.indexOf(text) > -1)
+      let results = this.state.cinemaList.filter(
+        item => item.name.toUpperCase().includes(text)
+          || item.address.toUpperCase().includes(text)
+      )
       this.setState({
         startSearch: true,
         searchList: results
@@ -33,7 +36,7 @@ class Cinema extends Component {
     }
     this.handleCancel = () => {
       this.setState({
-        startSearch:false
+        startSearch: false
       })
     }
   }
@@ -41,8 +44,13 @@ class Cinema extends Component {
   render() {
     return (
       <div className='cinema'>
-        <input onInput={e => this.handleInput(e)} className='searchInput'></input>
-        <button onClick={()=>this.handleCancel()} className='searchBtn'>取消</button>
+        <input
+          onInput={e => this.handleInput(e)}
+          onClick={() => { this.setState({ startSearch: true }) }}
+          className={this.state.startSearch ? 'searchInput' : 'search'}
+          placeholder='搜索'
+        ></input>
+        {this.state.startSearch && <button onClick={() => this.handleCancel()} className='searchBtn'>取消</button>}
         {!this.state.startSearch && this.state.cinemaList.map(item =>
           <div className='cinema-card' key={item.cinemaId}>
             <div className='cinema-name'>{item.name}</div>
