@@ -6,7 +6,7 @@ function FooterItem(props) {
   return (
     <div className='footer-item'>
       <img src={active ? activeImg :img} alt={text} />
-      <span className={active ? 'active' : ''}>{text}</span>
+      <span className={active ? 'active' : 'false'}>{text}</span>
     </div>
   );
 }

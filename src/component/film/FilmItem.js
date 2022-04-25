@@ -3,7 +3,7 @@ import './FilmItem.css'
 
 function FilmItem(props) {
   const { film } = props
-  console.log(film);
+  // console.log(film);
   return (
     <div className='film-item'>
       <img src={film.poster} alt='电影海报'/>
@@ -16,7 +16,7 @@ function FilmItem(props) {
           观众评分 <span>{film.grade}</span>
         </div>
         <div className='film-actor'>
-          主演：{film.actors[0].name}
+          主演：{film.actors.map(item=>item.name+' ')}
         </div>
         <div className='film-type'>
           {film.nation} | {film.runtime}分钟

@@ -1,0 +1,30 @@
+
+.cinema{
+  padding-top: 50px;
+}
+.cinema-list-tag{
+  position: fixed;
+  height: 50px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  top: 44px;
+}
+
+.cinema-list-tag label{
+  width: 33.33%;
+  line-height: 49px;
+  font-size: 14px;
+  color: #191a1b;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.cinema-list-tag img{
+  width: 6px;
+  height: 3px;
+  margin-left: 5px;
+}

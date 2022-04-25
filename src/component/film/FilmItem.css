@@ -14,15 +14,20 @@
 .film-item-text {
   padding: 0 10px;
   width: calc(100% - 116px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.film-name .name{
+
+.film-name .name {
   color: #191a1b;
   font-size: 16px;
   height: 22px;
   line-height: 22px;
   margin-right: 5px;
 }
-.film-name .type{
+
+.film-name .type {
   background-color: #d2d6dc;
   color: #fff;
   font-size: 9px;
@@ -32,13 +37,18 @@
   border-radius: 2px;
 }
 
-.film-grade{
+.film-grade {
   margin-top: 4px;
 }
 
-.film-grade span{
+.film-grade span {
   font-size: 14px;
   color: #ffb232;
+}
+
+.film-actor {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .film-item button {

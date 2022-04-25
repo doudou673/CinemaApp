@@ -1,0 +1,53 @@
+.cinema-item{
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ededed;
+  color:#797d82 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cinema-item-name{
+  width: calc(100% - 65px);
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.cinema-item-name .cinema-name{
+  color: #191a1b;
+  font-size: 15px;
+}
+
+.cinema-item-name .cinema-address{
+  max-width: 80%;
+  font-size: 12px;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cinema-item-price{
+  width: 70px;
+  margin-right: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cinema-item-price .cinema-price{
+  color: #ff5f16;
+  font-size: 10px;
+}
+
+.cinema-item-price .cinema-price span{
+  font-size: 15px;
+  /* margin-right: 2px; */
+}
+
+.cinema-item-price .cinema-gps{
+  font-size: 11px;
+  margin-top: 5px;
+}

@@ -3,7 +3,7 @@ import axios from 'axios';
 import FilmItem from './FilmItem';
 import './Film.css'
 
-function Film(props) {
+function Film() {
   const [filmList1, setFilmList1] = useState([])
   const [filmList2, setFilmList2] = useState([])
   const [tab, setTab] = useState(0)
@@ -31,8 +31,8 @@ function Film(props) {
   return (
     <div className='film'>
       <ul className='tab'>
-        <li onClick={() => setTab(0)}><div className={tab === 0 && 'active'}>正在热映</div></li>
-        <li onClick={() => setTab(1)}><div className={tab === 1 && 'active'}>即将上映</div></li>
+        <li onClick={() => setTab(0)}><div className={tab === 0 ? 'active' : 'false'}>正在热映</div></li>
+        <li onClick={() => setTab(1)}><div className={tab === 1 ? 'active' : 'false'}>即将上映</div></li>
       </ul>
       <ul className='film-list'>
         {tab === 0 ?
