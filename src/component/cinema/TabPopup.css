@@ -1,0 +1,43 @@
+.popup{
+  background-color: rgba(0, 0, 0,0.5);
+  position: fixed;
+  height: 100%;
+  top:94px;
+}
+
+.select-popup{
+  background-color: #fff;
+  width: 100vw;
+}
+
+.select-list{
+  list-style: none;
+}
+
+.select-list-item{
+  height: 44px;
+  width: 100vw;
+  padding: 0 15px;
+  color: #797d82;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+}
+
+.select-list-item.selected{
+  color: #ff5f16;
+}
+
+.select-list-item img{
+  width: 13px;
+  height: 9px;
+}
+
+.select-list-item .placehold{
+  width: 13px;
+}
+
+.select-list-item-text{
+  font-size: 13px;
+  margin-left: 10px;
+}

@@ -23,6 +23,10 @@
   border-bottom: 1px solid #ededed;
 }
 
+.cinema-list-tag .active{
+  color: #ff5f16;
+}
+
 .cinema-list-tag img{
   width: 6px;
   height: 3px;
