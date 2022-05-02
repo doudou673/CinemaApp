@@ -1,7 +1,3 @@
-
-.cinema{
-  padding-top: 50px;
-}
 .cinema-list-tag{
   position: fixed;
   height: 50px;
@@ -31,4 +27,9 @@
   width: 6px;
   height: 3px;
   margin-left: 5px;
+}
+
+.cinema-list {
+  list-style: none;
+  padding-top: 94px;
 }

@@ -1,14 +1,20 @@
 import React from 'react';
+import { Link, useResolvedPath, useMatch } from 'react-router-dom';
 import './FooterItem.css'
 
 function FooterItem(props) {
-  const { img, text, activeImg, active } = props
+  const { item } = props
+  let resolved = useResolvedPath(item.router);
+  let match = useMatch({ path: resolved.pathname, end: true });
+  // console.log(match);
   return (
-    <div className='footer-item'>
-      <img src={active ? activeImg :img} alt={text} />
-      <span className={active ? 'active' : 'false'}>{text}</span>
-    </div>
+    <Link to={item.router} className='footer-item'>
+      <img src={match ? item.activeicon : item.icon} alt='' />
+      <span className={match? 'active' :'false'}>{item.text}</span>
+    </Link>
   );
 }
 
 export default FooterItem;
+// ({isActive})=>isActive ? item.activeicon :
+// ({isActive})=>isActive ? 'active' : 

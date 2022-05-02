@@ -11,7 +11,6 @@
 
 .content{
   overflow: auto;
-  flex: 1;
   height: 100%;
 }
 .nav-bar{
@@ -21,7 +20,7 @@
   height: 50px;
   line-height: 50px;
   background-color: white;
-  overflow: hidden; 
+  /* overflow: hidden;  */
   border-top: 1px solid #ededed;
 }
 

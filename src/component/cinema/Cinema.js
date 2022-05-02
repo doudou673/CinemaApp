@@ -6,6 +6,7 @@ import tabClickIcon from '../../images/tab-click.png'
 import CinemaItem from './CinemaItem';
 import Location from './Location';
 import TabPopup from './TabPopup';
+import Header from '../common/Header';
 
 function Cinema() {
   const [cinemaList, setCinemaList] = useState([])
@@ -59,6 +60,7 @@ function Cinema() {
   }
   return (
     <div className='cinema'>
+      <Header title='影院'/>
       <div className='cinema-list-tag'>
         {[location, way, like].map((item, index) => tabContent(item, index))}
       </div>

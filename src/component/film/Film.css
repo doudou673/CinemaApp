@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.film {
-  padding-top: 50px;
-}
-
 .tab {
   list-style: none;
   height: 49px;
@@ -36,6 +32,7 @@
 
 .film-list {
   list-style: none;
+  padding-top: 94px;
 }
 
 .no-more {

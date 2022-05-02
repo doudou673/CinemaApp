@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FilmItem from './FilmItem';
+import Header from '../common/Header';
 import './Film.css'
 
 function Film() {
@@ -30,6 +31,7 @@ function Film() {
   }, [])
   return (
     <div className='film'>
+      <Header title='电影' />
       <ul className='tab'>
         <li onClick={() => setTab(0)}><div className={tab === 0 ? 'active' : 'false'}>正在热映</div></li>
         <li onClick={() => setTab(1)}><div className={tab === 1 ? 'active' : 'false'}>即将上映</div></li>
@@ -39,7 +41,7 @@ function Film() {
           filmList1.map(item => <li key={item.filmId}><FilmItem film={item} /></li>)
           : filmList2.map(item => <li key={item.filmId}><FilmItem film={item} /></li>)}
       </ul>
-      <div className='no-more'>- 无更多电影 -</div>
+        <div className='no-more'>- 无更多电影 -</div>
     </div>
   );
 }
