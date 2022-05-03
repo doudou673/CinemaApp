@@ -4,17 +4,19 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Film from '../component/film/Film';
 import Cinema from '../component/cinema/Cinema';
 import Center from '../component/center/Center';
+import Detail from '../component/film/Detail';
 
 function MyRouter(props) {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />}>
-          <Route path='' element={<Navigate to='/films' />} />
-          <Route path='/films' element={<Film />} />
-          <Route path='/cinemas' element={<Cinema />} />
-          <Route path='/center' element={<Center />} />
+        <Route path='' element={<Home />}>
+          <Route path='' element={<Navigate to='films' />} />
+          <Route path='films' element={<Film />} />
+          <Route path='cinemas' element={<Cinema />} />
+          <Route path='center' element={<Center />} />
         </Route>
+        <Route path='film/:filmId' element={<Detail/>}/>
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </Router>

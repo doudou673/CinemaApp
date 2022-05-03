@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.film {
+  background-color: #f4f4f4;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 49px;
+  width: 100%;
+  background-color: #ff5f16;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 49px;
+}
+
+.film-poster {
+  height: 56vw;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.film-poster img {
+  width: 100%;
+}
+
+.film-detail {
+  padding: 15px;
+  padding-top: 12px;
+  background-color: #fff;
+}
+
+.film-detail-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.film-detail-name .name {
+  color: #191a1b;
+  font-size: 18px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 7px;
+}
+
+.film-detail-name .type {
+  font-size: 9px;
+  color: #fff;
+  background-color: #d2d6dc;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.film-detail-name .grade {
+  color: #ffb232;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.film-detail-name .text {
+  color: #ffb232;
+  font-size: 10px;
+}
+
+.film-detail-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.film-detail-type span {
+  margin-top: 4px;
+  color: #797d82;
+  font-size: 13px;
+}
+
+.film-detail-intro .intro {
+  color: #797d82;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.film-detail-intro .arrow {
+  text-align: center;
+  width: 20px;
+  margin: auto;
+}
+
+.film-detail-intro .arrow img {
+  width: 8px;
+}
+
+.detail-film-actor {
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.film-actor-title {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  color: #191a1b;
+}
+
+.film-actor-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 15px;
+  display: flex;
+  height: 140px;
+}
+
+.film-actor-list-item {
+  width: 85px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.actor-img {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.actor-img img {
+  width: 85px;
+}
+
+.actor-name {
+  width: 85px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #191a1b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actor-role {
+  width: 85px;
+  text-align: center;
+
+  font-size: 10px;
+  color: #797d82;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.film-photo{
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background-color: #fff;
+}
+.film-photo-title{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.film-photo-title-text{
+  font-size: 16px;
+  color: #191a1b;
+}
+.film-photo-title-toall{
+  font-size: 13px;
+  color: #797d82;
+}
+.film-photo-list{
+  height: 115px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+}
+.film-photo-list-item{
+  padding-left: 15px;
+}
+.film-photo-list-item-img{
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film-photo-list-item-img img{
+  width: 150px;
+}
