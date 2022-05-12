@@ -17,7 +17,7 @@ function Login(props) {
         <div className='login-form'>
           <form>
             <div className='form-group'>
-              <input type='tel' maxlength='13' placeholder='手机号' />
+              <input type='tel' maxLength='13' placeholder='手机号' />
             </div>
             <div className='form-group'>
               <input type='number' placeholder='验证码' />
