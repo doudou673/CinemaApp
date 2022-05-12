@@ -16,7 +16,7 @@ function Detail(props) {
         'X-Host': 'mall.film-ticket.film.info'
       }
     }).then(res => {
-      console.log(res.data.data.film);
+      // console.log(res.data.data.film);
       setInfo(res.data.data.film)
       // setFilmList1(res.data.data.films)
     })
@@ -25,7 +25,7 @@ function Detail(props) {
 
   return (
     <div className='main'>
-      {info.actors && <div className='film'>
+      {info.actors && <div className='detail'>
         <div className='film-poster'>
           <img src={info.poster} alt='电影海报' />
         </div>
@@ -53,7 +53,7 @@ function Detail(props) {
         <div className='detail-film-actor'>
           <div className='film-actor-title'>演职人员</div>
           <div className='film-actor-list'>
-            {info.actors.map(item => <div key={item.name} className='film-actor-list-item'>
+            {info.actors.map(item => <div key={item.name+item.role} className='film-actor-list-item'>
               <div className='actor-img'><img src={item.avatarAddress} alt='头像' /></div>
               <span className='actor-name'>{item.name}</span>
               <span className='actor-role'>{item.role}</span>
